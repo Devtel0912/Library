@@ -1,5 +1,5 @@
 CREATE TABLE reservations (
-    reservaionsid int primary key,
+    reservationid int primary key,
     memberid int not null,
     bookid int not null,
     reservation_date DATE NOT NULL DEFAULT CURRENT_DATE,

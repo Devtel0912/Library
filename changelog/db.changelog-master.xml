@@ -55,4 +55,10 @@
             relativeToChangelogFile="true"/>
     </changeSet>
 
+    <changeSet id="009-insert-library-data" author="dev">
+    <sqlFile
+        path="C:\Users\devte\OneDrive\My Programs\Library\sql\009-insert-library-data.sql"
+        relativeToChangelogFile="true"/>
+</changeSet>
+
 </databaseChangeLog>
