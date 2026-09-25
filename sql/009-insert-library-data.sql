@@ -35,13 +35,13 @@ VALUES
 -- ============================================
 
 INSERT INTO categories
-(category_name, description)
+(categoryid, category_name, description)
 VALUES
-('Fiction', 'Novels and fictional literature'),
-('Mystery', 'Mystery and detective novels'),
-('Fantasy', 'Fantasy and speculative fiction'),
-('Science Fiction', 'Science fiction literature'),
-('Horror', 'Horror and supernatural fiction');
+(1, 'Fiction', 'Novels and fictional literature'),
+(2, 'Mystery', 'Mystery and detective novels'),
+(3, 'Fantasy', 'Fantasy and speculative fiction'),
+(4, 'Science Fiction', 'Science fiction literature'),
+(5, 'Horror', 'Horror and supernatural fiction');
 
 
 -- ============================================
@@ -68,23 +68,23 @@ VALUES
 -- ============================================
 
 INSERT INTO book_copies
-(bookid, barcode, status)
+(copyid, bookid, barcode, status)
 VALUES
-(1, 'LIB-1984-001', 'AVAILABLE'),
-(1, 'LIB-1984-002', 'CHECKED_OUT'),
-(2, 'LIB-ANIMAL-001', 'AVAILABLE'),
-(2, 'LIB-ANIMAL-002', 'AVAILABLE'),
-(3, 'LIB-PRIDE-001', 'CHECKED_OUT'),
-(4, 'LIB-HOBBIT-001', 'AVAILABLE'),
-(4, 'LIB-HOBBIT-002', 'CHECKED_OUT'),
-(5, 'LIB-LOTR-001', 'AVAILABLE'),
-(5, 'LIB-LOTR-002', 'AVAILABLE'),
-(6, 'LIB-ORIENT-001', 'CHECKED_OUT'),
-(7, 'LIB-NONE-001', 'AVAILABLE'),
-(8, 'LIB-SHINING-001', 'CHECKED_OUT'),
-(9, 'LIB-IT-001', 'AVAILABLE'),
-(9, 'LIB-IT-002', 'DAMAGED'),
-(10, 'LIB-STAND-001', 'AVAILABLE');
+(1, 1, 'LIB-1984-001', 'AVAILABLE'),
+(2, 1, 'LIB-1984-002', 'CHECKED_OUT'),
+(3, 2, 'LIB-ANIMAL-001', 'AVAILABLE'),
+(4, 2, 'LIB-ANIMAL-002', 'AVAILABLE'),
+(5, 3, 'LIB-PRIDE-001', 'CHECKED_OUT'),
+(6, 4, 'LIB-HOBBIT-001', 'AVAILABLE'),
+(7, 4, 'LIB-HOBBIT-002', 'CHECKED_OUT'),
+(8, 5, 'LIB-LOTR-001', 'AVAILABLE'),
+(9, 5, 'LIB-LOTR-002', 'AVAILABLE'),
+(10, 6, 'LIB-ORIENT-001', 'CHECKED_OUT'),
+(11, 7, 'LIB-NONE-001', 'AVAILABLE'),
+(12, 8, 'LIB-SHINING-001', 'CHECKED_OUT'),
+(13, 9, 'LIB-IT-001', 'AVAILABLE'),
+(14, 9, 'LIB-IT-002', 'DAMAGED'),
+(15, 10, 'LIB-STAND-001', 'AVAILABLE');
 
 
 -- ============================================
