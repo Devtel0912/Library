@@ -1,0 +1,32 @@
+# Liquibase
+liquibase.properties
+.liquibase/
+
+# JDBC driver
+drivers/*.jar
+
+# Environment / secrets
+.env
+.env.*
+
+# VS Code
+.vscode/
+
+# IntelliJ IDEA
+.idea/
+
+# Build files
+target/
+build/
+*.class
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
